@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NODO | SAMEEP — Gerencia de Planificación y Desarrollo</title>
+<meta name="description" content="NODO es la plataforma de coordinación organizativa de SAMEEP: proyectos, obras, indicadores y herramientas de gestión en un solo lugar.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pasar al contenido principal</a>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="site-logo">
+      <img src="assets/sameep-isotipo.png" alt="SAMEEP" class="site-logo-img">
+      <span class="logo-divider"></span>
+      <div class="logo-text">
+        <span class="logo-name">NODO</span>
+        <span class="logo-tagline">Plataforma de coordinación</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#herramientas">Herramientas</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#trabajo">Proyectos</a>
+      <div class="nav-more" id="navMore">
+        <button class="nav-more-btn" id="navMoreBtn" aria-expanded="false">
+          Más
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-more-dropdown">
+          <a href="#">Documentación</a>
+          <a href="#">Gerencia de Planificación</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search-btn" aria-label="Buscar">
+        <i class="ti ti-search"></i>
+      </button>
+      <a href="#" class="btn-contact">Iniciar sesión</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="#herramientas">Herramientas</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#trabajo">Proyectos</a>
+    <a href="#">Documentación</a>
+    <a href="#">Gerencia de Planificación</a>
+    <a href="#">Iniciar sesión</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" id="c-hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="eyebrow" id="c-hero-eyebrow">Gerencia de Planificación y Desarrollo</span>
+        <h1><span id="c-hero-title1">Datos y proyectos</span><br><span id="c-hero-title2">con resultados</span></h1>
+        <p id="c-hero-text">Lo que no se mide, no se gestiona. NODO integra la información de todas las áreas de SAMEEP para mejorar la toma de decisiones estratégicas.</p>
+        <div class="hero-actions">
+          <a href="#trabajo" class="btn-hero"><span id="c-hero-cta1">Ver proyectos</span> <i class="ti ti-arrow-right"></i></a>
+          <a href="#" class="btn-hero btn-hero-ghost"><span id="c-hero-cta2">Ver documentación</span> <i class="ti ti-file-text"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats-float" id="c-hero-stats">
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Indicadores<br>estratégicos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">62</span>
+        <span class="stat-label">Obras</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">15</span>
+        <span class="stat-label">Proyectos<br>monitoreados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2026</span>
+        <span class="stat-label">Plan presupuestario<br>vigente</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HERRAMIENTAS (services-section) ===== -->
+  <section class="services-section" id="herramientas">
+    <div class="section-head">
+      <span class="eyebrow-tag" id="c-tools-eyebrow">Acceso directo</span>
+      <h2 id="c-tools-title">Herramientas de gestión</h2>
+      <p id="c-tools-text">Todas las herramientas integradas para diseñar proyectos, optimizar recursos y mejorar decisiones.</p>
+    </div>
+    <div class="services-grid" id="c-tools-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-map-pin"></i></div>
+        <h3>Visor de Mapas</h3>
+        <p>Explorá y visualizá información geográfica de manera interactiva.</p>
+        <span class="tool-status is-live"><i class="ti ti-point-filled"></i> Activo</span>
+        <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-chart-bar"></i></div>
+        <h3>Monitoreo</h3>
+        <p>Seguimiento en tiempo real de datos e indicadores clave.</p>
+        <span class="tool-status is-live"><i class="ti ti-point-filled"></i> Activo</span>
+        <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="areas-head">
+      <span class="areas-label" id="c-areas-label">Áreas de intervención</span>
+    </div>
+    <div class="areas-grid" id="c-areas-grid">
+      <a href="#trabajo" class="area-tile" data-goto="optimizacion">
+        <div class="area-tile-icon"><i class="ti ti-gauge"></i></div>
+        <span>Optimización</span>
+      </a>
+      <a href="#trabajo" class="area-tile" data-goto="proyectos">
+        <div class="area-tile-icon"><i class="ti ti-clipboard-list"></i></div>
+        <span>Planes y Proyectos</span>
+      </a>
+      <a href="#trabajo" class="area-tile" data-goto="modernizacion">
+        <div class="area-tile-icon"><i class="ti ti-building-monument"></i></div>
+        <span>Modernización</span>
+      </a>
+      <a href="#trabajo" class="area-tile" data-goto="planeamiento">
+        <div class="area-tile-icon"><i class="ti ti-target-arrow"></i></div>
+        <span>Planeamiento</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ¿PARA QUÉ SIRVE? + NOVEDADES (about-news-section) ===== -->
+  <section class="about-news-section">
+    <div class="about-news-grid">
+      <div class="about-block">
+        <div class="about-text">
+          <h2 id="c-about-title">¿Para qué sirve este espacio?</h2>
+          <p id="c-about-text">Sabemos que la planificación no funciona sin datos precisos ni trabajo en equipo. Por eso integramos en un solo nodo la información de distintas áreas de SAMEEP: mapas, monitoreo, proyectos, planeamiento y presupuestos.</p>
+          <p class="intro-cta"><span id="c-about-cta-pre">¿Trabajás en SAMEEP y querés que sumemos tu herramienta?</span> <a href="#" id="c-about-cta-link">Contanos cómo podemos ayudarte →</a></p>
+          <a href="#herramientas" class="btn-outline"><span id="c-about-explore">Explorar herramientas</span> <i class="ti ti-arrow-right"></i></a>
+        </div>
+        <div class="about-image">
+          <div class="about-image-tile" aria-hidden="true"><i class="ti ti-droplet"></i></div>
+        </div>
+      </div>
+
+      <div class="news-block">
+        <h2 id="c-news-title">Novedades de SAMEEP</h2>
+        <ul class="news-list" id="c-news-list">
+          <li class="news-item"><a href="#">Presupuesto 2025: planificación y control financiero de recursos</a></li>
+          <li class="news-item"><a href="#">Base de datos: nueva herramienta para centralizar información</a></li>
+          <li class="news-item"><a href="#">Museo y Pabellón del Agua: revisión del proyecto patrimonial</a></li>
+          <li class="news-item"><a href="#">Reducción de agua no contabilizada en la red de distribución</a></li>
+        </ul>
+        <a href="#trabajo" class="news-see-all" id="c-news-seeall">+ Ver todos los proyectos</a>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="X"><i class="ti ti-brand-x"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OBJETIVOS ESTRATÉGICOS (participation-style, light bg) ===== -->
+  <section class="objetivos-section" id="objetivos">
+    <div class="section-head">
+      <span class="eyebrow-tag" id="c-obj-eyebrow">Marco institucional</span>
+      <h2 id="c-obj-title">Objetivos Estratégicos 2024–2027</h2>
+      <p id="c-obj-text">Orienta todas las decisiones de SAMEEP en materia de planificación y desarrollo.</p>
+    </div>
+    <div class="objetivos-grid" id="c-obj-grid">
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-shield-check"></i></div>
+        <h3>Imagen institucional</h3>
+        <p>Fortalecer la reputación y confianza pública de SAMEEP en la provincia.</p>
+      </div>
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-droplet"></i></div>
+        <h3>Servicios eficientes</h3>
+        <p>Optimizar los procesos de producción y distribución de agua potable.</p>
+      </div>
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-bolt"></i></div>
+        <h3>Capacidad de respuesta</h3>
+        <p>Reducir tiempos de atención ante emergencias e interrupciones del servicio.</p>
+      </div>
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-trending-up"></i></div>
+        <h3>Rentabilidad</h3>
+        <p>Garantizar la sostenibilidad financiera de la empresa a mediano y largo plazo.</p>
+      </div>
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-world"></i></div>
+        <h3>Accesibilidad y cobertura</h3>
+        <p>Ampliar la red para garantizar acceso al agua en toda la provincia.</p>
+      </div>
+      <div class="objetivo-card">
+        <div class="objetivo-icon"><i class="ti ti-leaf"></i></div>
+        <h3>Sustentabilidad</h3>
+        <p>Incorporar criterios ambientales en todos los proyectos e infraestructura.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUESTRO TRABAJO (proyectos) ===== -->
+  <section class="trabajo-section" id="trabajo">
+    <div class="section-head">
+      <span class="eyebrow-tag" id="c-trabajo-eyebrow">Nuestro trabajo</span>
+      <h2 id="c-trabajo-title">Áreas de intervención</h2>
+      <p id="c-trabajo-text">Proyectos activos organizados por ejes estratégicos de SAMEEP.</p>
+    </div>
+
+    <div class="area-tabs" role="tablist" aria-label="Áreas de intervención">
+      <button class="area-tab is-active" data-area="todos" role="tab" aria-selected="true">Todos</button>
+      <button class="area-tab" data-area="optimizacion" role="tab" aria-selected="false">Optimización</button>
+      <button class="area-tab" data-area="proyectos" role="tab" aria-selected="false">Planes y Proyectos</button>
+      <button class="area-tab" data-area="modernizacion" role="tab" aria-selected="false">Modernización</button>
+      <button class="area-tab" data-area="planeamiento" role="tab" aria-selected="false">Planeamiento</button>
+    </div>
+
+    <div class="search-row">
+      <i class="ti ti-search"></i>
+      <input type="search" id="workSearch" placeholder="Buscar en nuestros trabajos…" aria-label="Buscar proyectos">
+    </div>
+
+    <div class="work-grid" id="workGrid">
+      <article class="work-card" data-area="planeamiento" data-title="presupuesto 2025 planificacion control financiero recursos">
+        <div class="work-img work-img-a"><i class="ti ti-report-money"></i></div>
+        <div class="work-body">
+          <span class="work-eyebrow">Planeamiento</span>
+          <h3>Presupuesto 2025</h3>
+          <p>Planificación y control financiero para optimizar el uso de los recursos de la empresa.</p>
+          <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="work-card" data-area="proyectos" data-title="base de datos nueva herramienta toma de decisiones centralizar informacion">
+        <div class="work-img work-img-b"><i class="ti ti-database"></i></div>
+        <div class="work-body">
+          <span class="work-eyebrow">Planes y Proyectos</span>
+          <h3>Base de datos</h3>
+          <p>Nueva herramienta de toma de decisiones que permite gestionar y centralizar la información.</p>
+          <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="work-card" data-area="modernizacion" data-title="museo pabellon del agua patrimonial tanque elevado resistencia">
+        <div class="work-img work-img-c"><i class="ti ti-building-monument"></i></div>
+        <div class="work-body">
+          <span class="work-eyebrow">Modernización</span>
+          <h3>Museo y Pabellón del Agua</h3>
+          <p>Revisión del proyecto arquitectónico patrimonial del primer tanque elevado de Resistencia.</p>
+          <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="work-card" data-area="optimizacion" data-title="optimizacion de redes reduccion perdidas agua no contabilizada">
+        <div class="work-img work-img-d"><i class="ti ti-gauge"></i></div>
+        <div class="work-body">
+          <span class="work-eyebrow">Optimización</span>
+          <h3>Reducción de agua no contabilizada</h3>
+          <p>Detección y reparación de pérdidas en la red de distribución para optimizar el recurso.</p>
+          <a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+    <p class="work-empty" id="workEmpty" hidden>No encontramos coincidencias. Probá con otro término.</p>
+  </section>
+
+  <!-- ===== PARTICIPACIÓN + NEWSLETTER ===== -->
+  <section class="participation-section">
+    <div class="participation-grid">
+      <div class="participation-block">
+        <h2 id="c-part-title">¿Necesitás información de tu área en NODO?</h2>
+        <p id="c-part-text">Escribinos a la Gerencia de Planificación y Desarrollo y te ayudamos a sumar tu proyecto, obra o herramienta a la plataforma. También podés suscribirte para recibir novedades apenas se publiquen.</p>
+      </div>
+      <div class="newsletter-block">
+        <h3 id="c-newsletter-title">Recibí novedades de NODO</h3>
+        <p class="newsletter-subtitle" id="c-newsletter-subtitle">Un correo cuando haya nuevos indicadores, obras o herramientas disponibles.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" id="c-newsletter-placeholder" placeholder="tu-email@sameep.gob.ar" required>
+          <button type="submit" class="btn-subscribe"><span id="c-newsletter-button">Suscribirme</span> <i class="ti ti-send"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <a href="#top" class="footer-logo">
+      <img src="assets/sameep-blanco.png" alt="SAMEEP" class="footer-logo-img">
+      <span>NODO</span>
+    </a>
+    <div class="footer-contact">
+      <span id="c-footer-address">Gerencia de Planificación y Desarrollo — Provincia del Chaco, Argentina</span><br>
+      <a href="#" id="c-footer-email">planificacion@sameep.gob.ar</a> · <a href="#">Gobierno del Chaco</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+      <a href="#" class="social-icon" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+      <a href="#" class="social-icon" aria-label="X"><i class="ti ti-brand-x"></i></a>
+      <a href="#" class="social-icon" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    </div>
+  </div>
+  <nav class="footer-nav">
+    <a href="#herramientas">Herramientas</a>
+    <a href="#objetivos">Objetivos 2024–2027</a>
+    <a href="#trabajo">Proyectos</a>
+    <a href="#">Documentación</a>
+    <a href="#">SAMEEP</a>
+    <a href="#">Gobierno del Chaco</a>
+  </nav>
+  <div class="footer-bottom">
+    © 2026 SAMEEP · NODO — Gerencia de Planificación y Desarrollo
+  </div>
+</footer>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', function (user) {
+      if (!user) {
+        window.netlifyIdentity.on('login', function () {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>

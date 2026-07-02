@@ -1,0 +1,149 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "es"
+site_url: /
+display_url: /
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "home"
+    label: "Página de inicio"
+    files:
+      - name: "contenido"
+        label: "Contenido del Home"
+        file: "content.json"
+        fields:
+          - label: "Portada (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Texto superior", name: "eyebrow", widget: "string" }
+              - { label: "Título — línea 1", name: "title_line1", widget: "string" }
+              - { label: "Título — línea 2", name: "title_line2", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Texto botón 1", name: "cta_primary_text", widget: "string" }
+              - { label: "Texto botón 2", name: "cta_secondary_text", widget: "string" }
+              - { label: "Imagen de fondo", name: "background_image", widget: "image" }
+              - label: "Indicadores (4 números)"
+                name: "stats"
+                widget: "list"
+                summary: "{{fields.num}} — {{fields.label}}"
+                fields:
+                  - { label: "Número", name: "num", widget: "string" }
+                  - { label: "Etiqueta", name: "label", widget: "string" }
+
+          - label: "Herramientas"
+            name: "herramientas"
+            widget: "object"
+            fields:
+              - { label: "Texto superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - label: "Tarjetas de herramientas"
+                name: "tools"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Ícono (nombre de tabler-icons.io, sin 'ti-')", name: "icon", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Estado (texto)", name: "status", widget: "string" }
+                  - { label: "¿Herramienta activa?", name: "status_live", widget: "boolean", default: true }
+              - { label: "Título del bloque de áreas", name: "areas_label", widget: "string" }
+              - label: "Tarjetas de áreas"
+                name: "areas"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Ícono", name: "icon", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - label: "Área (no cambiar, debe coincidir con Proyectos)"
+                    name: "goto"
+                    widget: "select"
+                    options: ["optimizacion", "proyectos", "modernizacion", "planeamiento"]
+
+          - label: "¿Para qué sirve este espacio?"
+            name: "sobre"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Texto antes del link", name: "cta_pre_text", widget: "string" }
+              - { label: "Texto del link", name: "cta_link_text", widget: "string" }
+              - { label: "Texto del botón 'Explorar'", name: "explore_text", widget: "string" }
+
+          - label: "Novedades"
+            name: "novedades"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - label: "Lista de noticias"
+                name: "items"
+                widget: "list"
+                field: { label: "Noticia", name: "item", widget: "string" }
+              - { label: "Texto 'ver todas'", name: "see_all_text", widget: "string" }
+
+          - label: "Objetivos Estratégicos"
+            name: "objetivos"
+            widget: "object"
+            fields:
+              - { label: "Texto superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - label: "Tarjetas de objetivos"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Ícono", name: "icon", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "Proyectos (Áreas de intervención)"
+            name: "trabajo"
+            widget: "object"
+            fields:
+              - { label: "Texto superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Placeholder del buscador", name: "search_placeholder", widget: "string" }
+              - { label: "Texto cuando no hay resultados", name: "empty_text", widget: "string" }
+              - label: "Tarjetas de proyectos"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - label: "Área"
+                    name: "area"
+                    widget: "select"
+                    options: ["optimizacion", "proyectos", "modernizacion", "planeamiento"]
+                  - { label: "Etiqueta de categoría", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Ícono", name: "icon", widget: "string" }
+                  - label: "Color de tarjeta"
+                    name: "img_class"
+                    widget: "select"
+                    options: ["work-img-a", "work-img-b", "work-img-c", "work-img-d"]
+
+          - label: "Participación + Newsletter"
+            name: "participacion"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Título del newsletter", name: "newsletter_title", widget: "string" }
+              - { label: "Subtítulo del newsletter", name: "newsletter_subtitle", widget: "string" }
+              - { label: "Placeholder del email", name: "newsletter_placeholder", widget: "string" }
+              - { label: "Texto del botón", name: "newsletter_button", widget: "string" }
+
+          - label: "Pie de página"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Dirección", name: "address", widget: "string" }
+              - { label: "Email de contacto", name: "email", widget: "string" }

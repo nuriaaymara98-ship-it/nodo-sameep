@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "eyebrow": "Gerencia de Planificación y Desarrollo",
+    "title_line1": "Datos y proyectos",
+    "title_line2": "con resultados",
+    "text": "Lo que no se mide, no se gestiona. NODO integra la información de todas las áreas de SAMEEP para mejorar la toma de decisiones estratégicas.",
+    "cta_primary_text": "Ver proyectos",
+    "cta_secondary_text": "Ver documentación",
+    "background_image": "assets/hero-planta.webp",
+    "stats": [
+      { "num": "4", "label": "Indicadores estratégicos" },
+      { "num": "62", "label": "Obras" },
+      { "num": "15", "label": "Proyectos monitoreados" },
+      { "num": "2026", "label": "Plan presupuestario vigente" }
+    ]
+  },
+  "herramientas": {
+    "eyebrow": "Acceso directo",
+    "title": "Herramientas de gestión",
+    "text": "Todas las herramientas integradas para diseñar proyectos, optimizar recursos y mejorar decisiones.",
+    "tools": [
+      { "icon": "map-pin", "title": "Visor de Mapas", "text": "Explorá y visualizá información geográfica de manera interactiva.", "status": "Activo", "status_live": true },
+      { "icon": "chart-bar", "title": "Monitoreo", "text": "Seguimiento en tiempo real de datos e indicadores clave.", "status": "Activo", "status_live": true }
+    ],
+    "areas_label": "Áreas de intervención",
+    "areas": [
+      { "icon": "gauge", "title": "Optimización", "goto": "optimizacion" },
+      { "icon": "clipboard-list", "title": "Planes y Proyectos", "goto": "proyectos" },
+      { "icon": "building-monument", "title": "Modernización", "goto": "modernizacion" },
+      { "icon": "target-arrow", "title": "Planeamiento", "goto": "planeamiento" }
+    ]
+  },
+  "sobre": {
+    "title": "¿Para qué sirve este espacio?",
+    "text": "Sabemos que la planificación no funciona sin datos precisos ni trabajo en equipo. Por eso integramos en un solo nodo la información de distintas áreas de SAMEEP: mapas, monitoreo, proyectos, planeamiento y presupuestos.",
+    "cta_pre_text": "¿Trabajás en SAMEEP y querés que sumemos tu herramienta?",
+    "cta_link_text": "Contanos cómo podemos ayudarte →",
+    "explore_text": "Explorar herramientas"
+  },
+  "novedades": {
+    "title": "Novedades de SAMEEP",
+    "items": [
+      "Presupuesto 2025: planificación y control financiero de recursos",
+      "Base de datos: nueva herramienta para centralizar información",
+      "Museo y Pabellón del Agua: revisión del proyecto patrimonial",
+      "Reducción de agua no contabilizada en la red de distribución"
+    ],
+    "see_all_text": "+ Ver todos los proyectos"
+  },
+  "objetivos": {
+    "eyebrow": "Marco institucional",
+    "title": "Objetivos Estratégicos 2024–2027",
+    "text": "Orienta todas las decisiones de SAMEEP en materia de planificación y desarrollo.",
+    "items": [
+      { "icon": "shield-check", "title": "Imagen institucional", "text": "Fortalecer la reputación y confianza pública de SAMEEP en la provincia." },
+      { "icon": "droplet", "title": "Servicios eficientes", "text": "Optimizar los procesos de producción y distribución de agua potable." },
+      { "icon": "bolt", "title": "Capacidad de respuesta", "text": "Reducir tiempos de atención ante emergencias e interrupciones del servicio." },
+      { "icon": "trending-up", "title": "Rentabilidad", "text": "Garantizar la sostenibilidad financiera de la empresa a mediano y largo plazo." },
+      { "icon": "world", "title": "Accesibilidad y cobertura", "text": "Ampliar la red para garantizar acceso al agua en toda la provincia." },
+      { "icon": "leaf", "title": "Sustentabilidad", "text": "Incorporar criterios ambientales en todos los proyectos e infraestructura." }
+    ]
+  },
+  "trabajo": {
+    "eyebrow": "Nuestro trabajo",
+    "title": "Áreas de intervención",
+    "text": "Proyectos activos organizados por ejes estratégicos de SAMEEP.",
+    "search_placeholder": "Buscar en nuestros trabajos…",
+    "empty_text": "No encontramos coincidencias. Probá con otro término.",
+    "cards": [
+      { "area": "planeamiento", "eyebrow": "Planeamiento", "title": "Presupuesto 2025", "text": "Planificación y control financiero para optimizar el uso de los recursos de la empresa.", "icon": "report-money", "img_class": "work-img-a" },
+      { "area": "proyectos", "eyebrow": "Planes y Proyectos", "title": "Base de datos", "text": "Nueva herramienta de toma de decisiones que permite gestionar y centralizar la información.", "icon": "database", "img_class": "work-img-b" },
+      { "area": "modernizacion", "eyebrow": "Modernización", "title": "Museo y Pabellón del Agua", "text": "Revisión del proyecto arquitectónico patrimonial del primer tanque elevado de Resistencia.", "icon": "building-monument", "img_class": "work-img-c" },
+      { "area": "optimizacion", "eyebrow": "Optimización", "title": "Reducción de agua no contabilizada", "text": "Detección y reparación de pérdidas en la red de distribución para optimizar el recurso.", "icon": "gauge", "img_class": "work-img-d" }
+    ]
+  },
+  "participacion": {
+    "title": "¿Necesitás información de tu área en NODO?",
+    "text": "Escribinos a la Gerencia de Planificación y Desarrollo y te ayudamos a sumar tu proyecto, obra o herramienta a la plataforma. También podés suscribirte para recibir novedades apenas se publiquen.",
+    "newsletter_title": "Recibí novedades de NODO",
+    "newsletter_subtitle": "Un correo cuando haya nuevos indicadores, obras o herramientas disponibles.",
+    "newsletter_placeholder": "tu-email@sameep.gob.ar",
+    "newsletter_button": "Suscribirme"
+  },
+  "footer": {
+    "address": "Gerencia de Planificación y Desarrollo — Provincia del Chaco, Argentina",
+    "email": "planificacion@sameep.gob.ar"
+  }
+}
