@@ -22,30 +22,63 @@ ahora renombrada **NODO**. Mantiene todo el contenido real del sitio actual
 
 ```
 nodo-sameep/
-├── index.html      → toda la página (una sola vista, con anclas por sección)
+├── index.html      → estructura de la página (el texto de respaldo es el mismo que content.json)
 ├── style.css        → estilos y paleta de colores
-├── script.js         → menú móvil, menú "Más", buscador/filtros de proyectos, scroll header
+├── script.js         → carga content.json + menú móvil, menú "Más", buscador/filtros, scroll header
+├── content.json       → TODO el texto e imágenes editables del home (esto edita el panel /admin)
 ├── netlify.toml      → configuración mínima para Netlify
+├── admin/
+│   ├── index.html    → carga Decap CMS
+│   └── config.yml    → define los campos editables del panel (en español)
 └── assets/
     ├── sameep-blanco.png    → logo SAMEEP oficial (versión blanca, para fondo oscuro/footer)
     ├── sameep-isotipo.png   → isotipo SAMEEP en color, recortado para el header claro
+    ├── hero-planta.webp     → foto de portada
+    ├── uploads/             → acá van las imágenes que subas desde el panel /admin
     └── favicon.svg
 ```
 
-## Cómo subirlo a Netlify
+## Cómo editar el texto y las imágenes sin tocar código
 
-**Opción 1 — arrastrar y soltar (la más simple):**
+El sitio ya tiene un panel de administración en `/admin` (Decap CMS). Para que funcione
+necesita estar conectado a GitHub — **no funciona con Netlify Drop** (arrastrar y soltar),
+porque el panel guarda los cambios haciendo un commit al repositorio y Netlify necesita
+ese repositorio para volver a publicar automáticamente.
+
+Pasos (se hacen una sola vez):
+
+1. **Crear un repositorio en GitHub** (gratis, en https://github.com/new). Nombre sugerido:
+   `nodo-sameep`. Dejalo vacío (sin README).
+2. **Subir este proyecto** al repositorio. Ya está inicializado como repo Git en esta carpeta
+   con el primer commit hecho — solo falta conectarlo:
+   ```
+   git remote add origin https://github.com/TU-USUARIO/nodo-sameep.git
+   git push -u origin main
+   ```
+   (Pedime esto a mí y lo hago si me pasás la URL del repo vacío que creaste.)
+3. **En Netlify**: *Add new site → Import an existing project* → elegí GitHub → seleccioná
+   el repo `nodo-sameep`. Build command: vacío. Publish directory: `.` (ya configurado en
+   `netlify.toml`). Deploy.
+4. **Activar Netlify Identity**: en el panel del sitio → *Site configuration → Identity →
+   Enable Identity*.
+5. **Activar Git Gateway**: dentro de Identity → *Services → Git Gateway → Enable Git Gateway*.
+6. **Invitarte como usuaria**: Identity → *Invite users* → tu email → confirmás la invitación
+   que te llega por correo y elegís una contraseña.
+7. Entrá a `https://TU-SITIO.netlify.app/admin/`, iniciá sesión, y ya podés editar todos los
+   textos e imágenes del home desde un formulario visual. Al tocar **Publish**, el panel
+   guarda el cambio en GitHub y Netlify vuelve a publicar el sitio solo (tarda ~1 minuto).
+
+Después de este setup inicial, **no volvés a tocar código ni a subir zips**: todo se edita
+desde `/admin`.
+
+## Cómo subirlo a Netlify sin el panel de edición (más simple, pero sin /admin)
+
+Si por ahora solo querés verlo publicado, sin el panel de edición:
 1. Entrá a https://app.netlify.com/drop
 2. Arrastrá la carpeta `nodo-sameep` completa (o comprimila en `.zip` y subila).
 3. Netlify te da una URL al instante (ej. `nodo-sameep.netlify.app`).
-4. Desde el panel del sitio podés cambiar el nombre en *Site settings → Change site name*.
 
-**Opción 2 — con cuenta y Git (para poder seguir editando):**
-1. Subí la carpeta `nodo-sameep` a un repositorio (GitHub/GitLab).
-2. En Netlify: *Add new site → Import an existing project*.
-3. Build command: dejalo vacío. Publish directory: `.` (raíz del repo, ya está
-   configurado en `netlify.toml`).
-4. Deploy.
+Podés migrar después al flujo con GitHub de arriba sin perder nada.
 
 No requiere build ni dependencias: es HTML/CSS/JS plano.
 
