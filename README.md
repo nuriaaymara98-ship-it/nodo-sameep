@@ -43,12 +43,40 @@ nodo-sameep/
     └── favicon.svg
 ```
 
-## Cómo editar el texto y las imágenes sin tocar código
+## Editar en LOCAL, en tu propia PC (recomendado para probar / mientras conectás Netlify)
 
-El sitio ya tiene un panel de administración en `/admin` (Decap CMS). Para que funcione
-necesita estar conectado a GitHub — **no funciona con Netlify Drop** (arrastrar y soltar),
-porque el panel guarda los cambios haciendo un commit al repositorio y Netlify necesita
-ese repositorio para volver a publicar automáticamente.
+No hace falta GitHub ni Netlify para editar. Decap CMS tiene un "modo local": un
+mini-servidor que corre en tu computadora y guarda los cambios directo en estos
+archivos, sin login real.
+
+**Necesitás tener [Node.js](https://nodejs.org) instalado** (una sola vez). Después,
+cada vez que quieras editar:
+
+1. Abrí una terminal en la carpeta `nodo-sameep` y corré:
+   ```
+   npx decap-server
+   ```
+   Dejalo abierto — es el que guarda tus cambios en los archivos.
+2. En **otra** terminal (sin cerrar la anterior), en la misma carpeta, corré:
+   ```
+   npx serve . -p 5173
+   ```
+   Esto sirve el sitio.
+3. Abrí en el navegador **http://localhost:5173/admin/**. Te va a aparecer un botón
+   "Iniciar sesión" — hacé clic (no pide usuario ni contraseña, es solo para entrar).
+4. Editá lo que quieras y tocá **Publish**. El cambio queda guardado en los archivos
+   de la carpeta al instante — podés recargar `http://localhost:5173/` y ya lo vas a ver.
+
+Cuando quieras subir esos cambios a internet (Netlify), simplemente hacés `git commit`
++ `git push` como venimos haciendo, o me pedís a mí que lo haga.
+
+## Editar desde internet, sin tener que abrir nada en tu PC (Netlify + GitHub)
+
+Esto es un paso más, pero te permite editar desde cualquier lado (celular, otra PC) sin
+depender de tener la terminal abierta. Para que funcione necesita estar conectado a
+GitHub — **no funciona con Netlify Drop** (arrastrar y soltar), porque el panel guarda
+los cambios haciendo un commit al repositorio y Netlify necesita ese repositorio para
+volver a publicar automáticamente.
 
 Pasos (se hacen una sola vez):
 

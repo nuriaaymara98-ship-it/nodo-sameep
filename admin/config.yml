@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+# Permite editar en local (http://localhost/.../admin/) sin login ni Netlify Identity.
+# Requiere correr "npx decap-server" en esta carpeta mientras editás — ver README.md.
+local_backend: true
+
 locale: "es"
 site_url: /
 display_url: /
