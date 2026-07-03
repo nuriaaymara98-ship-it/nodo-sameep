@@ -417,7 +417,16 @@ h1,h2,h3{color:var(--text-primary);font-family:var(--font-brand)}
 .work-body{padding:20px 20px 22px}
 .work-eyebrow{display:block;color:var(--rio-azulado);font-weight:700;font-size:0.7rem;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px}
 .work-body h3{font-family:var(--font-brand);font-size:1.05rem;font-weight:700;margin-bottom:10px}
-.work-body p{font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:16px;min-height:62px;font-style:italic}
+.work-body p{font-size:0.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:14px;min-height:62px;font-style:italic}
+
+.work-status{display:inline-flex;align-items:center;gap:4px;font-size:0.74rem;font-weight:700;margin-bottom:10px}
+.work-status i{font-size:13px}
+.work-status.is-done{color:#1B8A4B}
+.work-status.is-progress{color:var(--rio-azulado)}
+.work-status.is-pending{color:var(--gray-500)}
+
+.work-progress{height:4px;background:var(--gray-200);border-radius:99px;margin-bottom:14px;overflow:hidden}
+.work-progress-fill{height:100%;background:var(--rio-azulado);border-radius:99px}
 
 .work-empty{text-align:center;color:var(--text-muted);padding:40px 0;font-size:0.95rem}
 

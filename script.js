@@ -215,13 +215,20 @@
         var workGrid = document.getElementById('workGrid');
         if (workGrid) {
           workGrid.innerHTML = w.cards.map(function (card) {
-            var searchTitle = (card.title + ' ' + card.eyebrow + ' ' + card.text).toLowerCase();
+            var searchTitle = (card.title + ' ' + card.eyebrow + ' ' + card.text + ' ' + (card.estado || '')).toLowerCase();
+            var estadoClass = card.estado === 'Finalizado' ? 'is-done' : card.estado === 'En proceso' ? 'is-progress' : 'is-pending';
+            var estadoBadge = card.estado ?
+              '<span class="work-status ' + estadoClass + '"><i class="ti ti-point-filled"></i> ' + escapeHtml(card.estado) +
+              (card.progreso ? ' · ' + escapeHtml(String(card.progreso)) + '%' : '') + '</span>' : '';
+            var progressBar = card.progreso ?
+              '<div class="work-progress"><div class="work-progress-fill" style="width:' + Math.min(100, card.progreso) + '%"></div></div>' : '';
             return '<article class="work-card" data-area="' + escapeHtml(card.area) + '" data-title="' + escapeHtml(searchTitle) + '">' +
               '<div class="work-img ' + escapeHtml(card.img_class) + '"><i class="ti ti-' + escapeHtml(card.icon) + '"></i></div>' +
               '<div class="work-body">' +
               '<span class="work-eyebrow">' + escapeHtml(card.eyebrow) + '</span>' +
               '<h3>' + escapeHtml(card.title) + '</h3>' +
               '<p>' + escapeHtml(card.text) + '</p>' +
+              estadoBadge + progressBar +
               '<a href="#" class="btn-service"><u>Ver</u> más <i class="ti ti-arrow-right"></i></a>' +
               '</div></article>';
           }).join('');

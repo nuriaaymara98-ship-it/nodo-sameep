@@ -67,10 +67,28 @@
     "search_placeholder": "Buscar en nuestros trabajos…",
     "empty_text": "No encontramos coincidencias. Probá con otro término.",
     "cards": [
-      { "area": "planeamiento", "eyebrow": "Planeamiento", "title": "Presupuesto 2025", "text": "Planificación y control financiero para optimizar el uso de los recursos de la empresa.", "icon": "report-money", "img_class": "work-img-a" },
-      { "area": "proyectos", "eyebrow": "Planes y Proyectos", "title": "Base de datos", "text": "Nueva herramienta de toma de decisiones que permite gestionar y centralizar la información.", "icon": "database", "img_class": "work-img-b" },
-      { "area": "modernizacion", "eyebrow": "Modernización", "title": "Museo y Pabellón del Agua", "text": "Revisión del proyecto arquitectónico patrimonial del primer tanque elevado de Resistencia.", "icon": "building-monument", "img_class": "work-img-c" },
-      { "area": "optimizacion", "eyebrow": "Optimización", "title": "Reducción de agua no contabilizada", "text": "Detección y reparación de pérdidas en la red de distribución para optimizar el recurso.", "icon": "gauge", "img_class": "work-img-d" }
+      { "area": "optimizacion", "eyebrow": "Evaluación de pérdidas", "title": "Reducción de agua no contabilizada", "text": "Modelado del Balance de Agua en los distintos sistemas de distribución de agua potable, valorando las pérdidas reales y aparentes y evaluando su incidencia.", "estado": "En proceso", "progreso": 52, "icon": "gauge", "img_class": "work-img-d" },
+      { "area": "optimizacion", "eyebrow": "Sistemas de medición", "title": "IANC en Acueductos", "text": "Determinación del índice de agua no contabilizada en sistemas de acueductos.", "estado": "Finalizado", "icon": "ruler-2", "img_class": "work-img-d" },
+      { "area": "optimizacion", "eyebrow": "Evaluación de pérdidas", "title": "IANC en asentamientos informales", "text": "Índice de agua no contabilizada en asentamientos informales.", "estado": "Finalizado", "icon": "gauge", "img_class": "work-img-d" },
+
+      { "area": "proyectos", "eyebrow": "Fortalecimiento institucional", "title": "Base de datos", "text": "Nueva herramienta de toma de decisiones que permite gestionar, organizar y centralizar la información de manera eficiente.", "estado": "Finalizado", "icon": "database", "img_class": "work-img-b" },
+
+      { "area": "planeamiento", "eyebrow": "Evaluación y preinversión", "title": "Presupuesto 2025", "text": "Planificación y control financiero para optimizar el uso de los recursos de la empresa.", "estado": "Finalizado", "icon": "report-money", "img_class": "work-img-a" },
+      { "area": "planeamiento", "eyebrow": "Evaluación y preinversión", "title": "Proyectos: acompañamiento y evaluación", "text": "Acompañamiento para la elaboración de proyectos de planeamiento estratégico.", "estado": "Finalizado", "icon": "report-money", "img_class": "work-img-a" },
+      { "area": "planeamiento", "eyebrow": "Monitoreo", "title": "Tablero de monitoreo y seguimiento de proyectos", "text": "Herramienta de monitorización de proyectos para garantizar el logro de metas.", "estado": "Finalizado", "icon": "chart-bar", "img_class": "work-img-a" },
+
+      { "area": "modernizacion", "eyebrow": "Infraestructura edilicia", "title": "Museo y Pabellón del Agua", "text": "Revisión de proyecto arquitectónico patrimonial del primer tanque elevado del servicio de agua potable de Resistencia, a cargo de estudiantes de la Facultad de Arquitectura y Urbanismo de la UNNE.", "estado": "Finalizado", "icon": "building", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Reuniones efectivas", "text": "Taller de capacitación de reuniones efectivas a la Gerencia de Planificación.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Innovación tecnológica", "title": "Banco de Ideas", "text": "Proyecto de innovación para mejorar procesos en la empresa.", "estado": "Finalizado", "icon": "bulb", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Gestión de Procedimientos Internos", "text": "Elaboración de procedimientos y actualización.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Instructivo para la elaboración de diagramas", "text": "Guía específica para el armado de diagramas.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Especificaciones para control de bombas", "text": "Procedimiento específico para el cuidado de bombas.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Innovación tecnológica", "title": "Agua para comunidades rurales de El Impenetrable", "text": "Proyecto de abastecimiento conjunto con UTN.", "estado": "Finalizado", "icon": "bulb", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Innovación tecnológica", "title": "Gestión de las lagunas de tratamiento en Fontana", "text": "Evaluación de lagunas de estabilización e impacto en ríos.", "estado": "Finalizado", "icon": "bulb", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Gestión Integral de Reclamos", "text": "Procedimiento de la gestión de reclamos.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Procesos internos", "title": "Instructivo: Elaboración de procedimientos internos", "text": "Guía para la elaboración de presupuestos internos.", "estado": "Finalizado", "icon": "clipboard-list", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Infraestructura edilicia", "title": "Estandarización de imagen institucional", "text": "Proyecto de intervención integral en fachadas que tiene como propósito renovar y fortalecer la imagen institucional.", "estado": "Finalizado", "icon": "building", "img_class": "work-img-c" },
+      { "area": "modernizacion", "eyebrow": "Innovación tecnológica", "title": "Monitoreo satelital de calidad de agua", "text": "Proyecto de monitorización de cuerpos de agua.", "estado": "Finalizado", "icon": "bulb", "img_class": "work-img-c" }
     ]
   },
   "participacion": {

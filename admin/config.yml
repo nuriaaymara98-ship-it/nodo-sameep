@@ -124,6 +124,18 @@ collections:
                   - { label: "Etiqueta de categoría", name: "eyebrow", widget: "string" }
                   - { label: "Título", name: "title", widget: "string" }
                   - { label: "Texto", name: "text", widget: "text" }
+                  - label: "Estado"
+                    name: "estado"
+                    widget: "select"
+                    required: false
+                    options: ["Pendiente", "En proceso", "Finalizado"]
+                  - label: "Avance (%, opcional — solo si está 'En proceso')"
+                    name: "progreso"
+                    widget: "number"
+                    required: false
+                    value_type: "int"
+                    min: 0
+                    max: 100
                   - { label: "Ícono", name: "icon", widget: "string" }
                   - label: "Color de tarjeta"
                     name: "img_class"
