@@ -5,18 +5,23 @@ ahora renombrada **NODO**. Mantiene todo el contenido real del sitio actual
 (https://planificacion.sameep.gob.ar:1444/) pero con:
 
 - Nueva identidad: **NODO** en vez de "PCO", con isotipo real de SAMEEP recortado del logo oficial.
-- Paleta 100% azul institucional (tomada del logo SAMEEP y de tonos de identidad
-  de Gobierno del Chaco), reemplazando el verde oliva que no correspondía a la marca.
-- Las 6 herramientas de gestión visibles de entrada (Visor de Mapas, Monitoreo,
-  Base de Datos, Gestión de Proyectos, Planeamiento, Presupuestos) — antes solo
-  se veían 2 o 3 por el carrusel.
+- Paleta y tipografía tomadas del **manual de marca oficial** ("Pautas para los módulos
+  de la plataforma", Propuesta home PCO): Azul Noche `#00203A`, Azul Laguna `#063565`,
+  Río Azulado `#5059BC`, Verde Naturaleza `#8A9A46`, Verde Agricultura `#C8D29C` y
+  Fucsia Lapacho `#F26DF9`. Tipografía Montserrat en todo el sitio. Botones sólidos
+  navy con la palabra "Ver" subrayada, íconos circulares con borde verde, texto
+  descriptivo en itálica — siguiendo el estilo del mockup original.
+- Las 4 áreas de intervención (Optimización, Planes y Proyectos, Modernización,
+  Planeamiento) usan los 4 colores del manual, igual que en la propuesta original.
+- Logos de SAMEEP y Gobierno del Chaco en el footer (versión para fondo oscuro,
+  recortada del propio manual).
 - CTAs reales como botones (antes eran links de texto poco visibles).
-- Buscador + filtros por pestaña funcionando en "Áreas de intervención".
+- Buscador + filtros por pestaña funcionando en "Áreas de intervención", conectado
+  con las tarjetas de "Herramientas → Áreas de intervención".
 - Menú responsive con hamburguesa para mobile + menú "Más" desplegable en desktop.
-- Diseño basado en la estructura visual de [ips.or.cr](http://ips.or.cr/): header fijo
-  con efecto vidrio esmerilado, tipografía serif (Playfair Display) para títulos +
-  sans (Inter) para texto, botones tipo píldora con elevación al hover, tarjetas con
-  borde superior animado, sección de novedades + newsletter.
+- Estructura de página basada en [ips.or.cr](http://ips.or.cr/): header fijo con
+  efecto vidrio esmerilado, botones tipo píldora con elevación al hover, tarjetas
+  con borde superior animado, sección de novedades + newsletter.
 
 ## Estructura
 
