@@ -136,6 +136,10 @@ collections:
                     value_type: "int"
                     min: 0
                     max: 100
+                  - label: "Nota (año, ubicación, resolución — opcional)"
+                    name: "meta"
+                    widget: "string"
+                    required: false
                   - { label: "Ícono", name: "icon", widget: "string" }
                   - label: "Color de tarjeta"
                     name: "img_class"
