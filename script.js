@@ -145,7 +145,7 @@
               '<h3>' + escapeHtml(tool.title) + '</h3>' +
               '<p>' + escapeHtml(tool.text) + '</p>' +
               '<span class="tool-status ' + statusClass + '"><i class="ti ti-point-filled"></i> ' + escapeHtml(tool.status) + '</span>' +
-              '<a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>' +
+              '<a href="#" class="btn-service"><u>Ver</u> más <i class="ti ti-arrow-right"></i></a>' +
               '</div>';
           }).join('');
         }
@@ -222,7 +222,7 @@
               '<span class="work-eyebrow">' + escapeHtml(card.eyebrow) + '</span>' +
               '<h3>' + escapeHtml(card.title) + '</h3>' +
               '<p>' + escapeHtml(card.text) + '</p>' +
-              '<a href="#" class="btn-service">Ver más <i class="ti ti-arrow-right"></i></a>' +
+              '<a href="#" class="btn-service"><u>Ver</u> más <i class="ti ti-arrow-right"></i></a>' +
               '</div></article>';
           }).join('');
         }
