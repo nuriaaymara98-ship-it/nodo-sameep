@@ -27,13 +27,14 @@ ahora renombrada **NODO**. Mantiene todo el contenido real del sitio actual
 
 ```
 nodo-sameep/
-├── index.html      → estructura de la página (el texto de respaldo es el mismo que content.json)
+├── index.html      → estructura de la página (con todo el contenido de respaldo incluido)
 ├── style.css        → estilos y paleta de colores
-├── script.js         → carga content.json + menú móvil, menú "Más", buscador/filtros, scroll header
-├── content.json       → TODO el texto e imágenes editables del home (esto edita el panel /admin)
+├── content.js         → TODO el texto del home, como variable JS (window.NODO_CONTENT)
+├── script.js         → lee content.js + menú móvil, menú "Más", buscador/filtros, scroll header
+├── content.json       → mismo contenido que content.js, en JSON puro (lo usa el panel /admin)
 ├── netlify.toml      → configuración mínima para Netlify
 ├── admin/
-│   ├── index.html    → carga Decap CMS
+│   ├── index.html    → carga Decap CMS (opcional, ver más abajo)
 │   └── config.yml    → define los campos editables del panel (en español)
 └── assets/
     ├── sameep-blanco.png    → logo SAMEEP oficial (versión blanca, para fondo oscuro/footer)
@@ -43,7 +44,25 @@ nodo-sameep/
     └── favicon.svg
 ```
 
-## Editar en LOCAL, en tu propia PC (recomendado para probar / mientras conectás Netlify)
+## Ver el sitio — sin servidor, sin instalar nada
+
+Desde esta versión, `index.html` funciona **con doble clic**, tal cual, sin necesitar
+ningún servidor ni terminal. El contenido está en `content.js`, que el navegador carga
+como un script normal (no como los sitios que usan `fetch`, que sí necesitan servidor).
+
+Simplemente hacé doble clic en `nodo-sameep/index.html` y se abre en tu navegador con
+todo el diseño y contenido. Si antes lo abriste así y se vio "texto plano sin estilo",
+volvé a probar — ya está arreglado.
+
+⚠️ Si en algún momento editás `content.json` a mano o desde `/admin`, avisame para que
+regenere `content.js` (tienen que decir lo mismo). Si edito yo el contenido, ya me
+encargo de mantener los dos sincronizados.
+
+## Editar con el panel visual `/admin` (opcional, necesita un mini-servidor)
+
+Esto es para cuando quieras editar texto e imágenes sin tocar código, con un formulario
+visual en vez de escribirme a mí. A diferencia de simplemente *ver* el sitio, *editar*
+sí necesita un servidor corriendo (es lo que guarda tus cambios en los archivos).
 
 No hace falta GitHub ni Netlify para editar. Decap CMS tiene un "modo local": un
 mini-servidor que corre en tu computadora y guarda los cambios directo en estos

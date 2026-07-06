@@ -267,15 +267,12 @@
       .replace(/"/g, '&quot;');
   }
 
-  fetch('content.json', { cache: 'no-store' })
-    .then(function (res) { return res.ok ? res.json() : null; })
-    .then(function (data) {
-      if (data) renderContent(data);
-    })
-    .catch(function () {
-      // Si falla la carga, el HTML ya trae el contenido de respaldo tal cual.
-    })
-    .finally(function () {
-      setupWorkFilter();
-    });
+  // El contenido viene de content.js (window.NODO_CONTENT), cargado como <script> normal.
+  // Así funciona abriendo el archivo directo (doble clic), sin necesitar ningún servidor.
+  try {
+    if (window.NODO_CONTENT) renderContent(window.NODO_CONTENT);
+  } catch (e) {
+    // Si algo falla, el HTML ya trae el contenido de respaldo tal cual.
+  }
+  setupWorkFilter();
 })();
